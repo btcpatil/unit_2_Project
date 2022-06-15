@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a4368f5b1.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ededed;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 0px;
+        }
+
+        #navbar>#logo {
+            margin-left: 260px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        #navbar>#username {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #navbar>#username>svg {
+            width: 10%;
+            height: 40%;
+            margin-right: -7px;
+        }
+
+        #header {
+            width: 70%;
+            margin: auto;
+            margin-top: 15px;
+            padding: 10px 0px;
+        }
+
+        #header>h1 {
+            font-size: 25px;
+            line-height: 33.75px;
+            font-weight: 700;
+            color: #202843;
+            line-height: 33.75px;
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        }
+
+        #covidwarning {
+
+            border-left: 2px solid #7a5505;
+            border-left: 3px solid #7a5505;
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+            padding: 15px 0px;
+            background-color: #f0dcb4;
+
+        }
+
+        #covidwarning>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        #covidwarning>div>div:first-child {
+            display: flex;
+
+        }
+
+        #covidwarning>div>div>svg {
+            padding: 0px;
+            width: 30%;
+            height: 20px;
+            margin-right: 10px;
+            margin-left: -5px;
+        }
+
+        #covidwarning>div>div:first-child>p {
+            width: 300px;
+            margin-left: -15px;
+            color: #7a5505;
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        }
+
+        #covidwarning>div:nth-child(2) {
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+            margin-left: 70px;
+            margin-top: 7px;
+            color: #7a5505;
+
+        }
+
+        #covidwarning>div:nth-child(2)>p {
+            text-decoration: underline;
+        }
+
+        #removecovid {
+            margin-right: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #7a5505;
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        }
+
+        #rating {
+            width: 70%;
+            display: flex;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        .fa-check {
+            color: #2f7000;
+            font-size: 15px;
+            line-height: 21.1765px;
+            margin-right: 10px;
+
+        }
+
+        #rating>p {
+            color: #2f7000;
+            font-size: 15px;
+            line-height: 21.1765px;
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        }
+
+        #body {
+            display: flex;
+            height: 500px;
+            border: 1px solid red;
+            width: 70%;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        #body>#leftbody {
+            width: 62%;
+            border: 1px solid black;
+            margin-right: 15px;
+        }
+
+        #body>#rightbody {
+            width: 37%;
+            border: 1px solid blue;
+        }
+
+        #userinfo {
+            display: flex;
+            background-color: white;
+        }
+
+        #personIcon {
+            width: 10%;
+            border: 1px solid red;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        #personIcon>i{
+            font-size: 30px;
+            
+        }
+
+        #userInput {
+            width: 90%;
+            border: 1px solid teal;
+        }
+
+        #userInput>form {
+            width: 100%;
+            padding-top: 20px;
+            border: 1px solid blue;
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        }
+        #userInput>form>label:first-child{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #userInput>form>p:nth-child(4){
+            font-size: 15px;
+            color: #2f7000;
+            margin-top: 7px;
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        }
+        #userInput .required:after{
+             content: "*";
+             color: #2f7000;
+        }
+        #userInput .required{
+            color: #616161;
+            font-size: 13px;
+            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+            font-weight: 700;
+            line-height: 18.2px; 
+        }
+         #firstNameAndLastName{
+            display: flex;
+            border: 1px solid red;
+         }
+         .required{
+            border: 1px solid red;
+            
+         }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27" alt="">
+        </div>
+        <div id=username>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+                width="512" height="512">
+                <g>
+                    <circle cx="256" cy="128" r="128" />
+                    <path
+                        d="M256,298.667c-105.99,0.118-191.882,86.01-192,192C64,502.449,73.551,512,85.333,512h341.333   c11.782,0,21.333-9.551,21.333-21.333C447.882,384.677,361.99,298.784,256,298.667z" />
+                </g>
+            </svg>
+            <div>Hello, Manjunath</div>
+        </div>
+
+
+
+    </div>
+    <div id="header">
+        <h1>Review and book</h1>
+    </div>
+    <div id="covidwarning">
+        <div>
+            <div>
+                <svg id="Layer_1" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1">
+                    <path
+                        d="m18.581 2.14-6.265-2.089a1 1 0 0 0 -.632 0l-6.266 2.089a4.993 4.993 0 0 0 -3.418 4.743v5.117c0 7.563 9.2 11.74 9.594 11.914a1 1 0 0 0 .812 0c.394-.174 9.594-4.351 9.594-11.914v-5.117a4.993 4.993 0 0 0 -3.419-4.743zm-6.581 16.86a1 1 0 1 1 1-1 1 1 0 0 1 -1 1zm1-5a1 1 0 0 1 -2 0v-8a1 1 0 0 1 2 0z" />
+                </svg>
+                <p>Check COVID-19 retrictions</p>
+            </div>
+            <div>
+                <p id="removecovid">x</p>
+            </div>
+        </div>
+        <div>
+            <p>Find out more <i class="fa-solid fa-clone"></i></p>
+        </div>
+    </div>
+    <div id="rating">
+        <i class="fa-solid fa-check"></i>
+        <p>You have picked winner! This hotel is rated 4.2/5</p>
+    </div>
+    <div id="body">
+        <div id="leftbody">
+
+            <div id="loginvalidation"></div>
+
+            <div id="userinfo">
+                <div id="personIcon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div id="userInput">
+                    <form>
+                        <label for="">Room 1:</label>
+                        <label for="">2 Adults, 1 King Bed, Non-smoking</label><br/>
+                        <p><i class="fa-solid fa-check"></i>Free parking</p>
+                        <label class="required" for="">Traveller name</label><br/>
+                        <select name="" id="tName">
+                            <option value="">Select Traveller</option>
+                            <option value="Add new traveller">Add new traveller</option>
+                            <option value="Me">Me</option>
+                        </select>
+                        <div id="firstNameAndLastName">
+                            <div id="firstName">
+                                <label class="required" for="">First name</label><br/>
+                                <input type="text" placeholder="(e.g.masai)" required>
+                            </div>
+                            <div id="lastName">
+                                <label class="required" for="">last name</label><br/>
+                                <input type="text" placeholder="(e.g.school)" required>
+                            </div>
+                        </div>
+                        <label class="required" for="">Mobile phone number</label><br/>
+                        <label for="">IND  +91  <i class="fa-solid fa-angle-down"></i></label>
+                        <input type="number" placeholder="So the property can reach you" required><br/>
+                        <input type="checkbox">
+                        <label for="">Recive text alert about this trip(free of charge)</label><br/>
+                        <p>Special Requests(Optional)</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="rightbody">
+
+        </div>
+    </div>
+</body>
+
+</html>
