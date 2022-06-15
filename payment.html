@@ -7,217 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6a4368f5b1.js" crossorigin="anonymous"></script>
     <title>Document</title>
-
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #ededed;
-        }
-
-        #navbar {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            padding: 10px 0px;
-        }
-
-        #navbar>#logo {
-            margin-left: 260px;
-            display: flex;
-            align-items: center;
-
-        }
-
-        #navbar>#username {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #navbar>#username>svg {
-            width: 10%;
-            height: 40%;
-            margin-right: -7px;
-        }
-
-        #header {
-            width: 70%;
-            margin: auto;
-            margin-top: 15px;
-            padding: 10px 0px;
-        }
-
-        #header>h1 {
-            font-size: 25px;
-            line-height: 33.75px;
-            font-weight: 700;
-            color: #202843;
-            line-height: 33.75px;
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-        }
-
-        #covidwarning {
-
-            border-left: 2px solid #7a5505;
-            border-left: 3px solid #7a5505;
-            width: 70%;
-            margin: auto;
-            margin-top: 20px;
-            padding: 15px 0px;
-            background-color: #f0dcb4;
-
-        }
-
-        #covidwarning>div {
-            display: flex;
-            justify-content: space-between;
-        }
-
-
-        #covidwarning>div>div:first-child {
-            display: flex;
-
-        }
-
-        #covidwarning>div>div>svg {
-            padding: 0px;
-            width: 30%;
-            height: 20px;
-            margin-right: 10px;
-            margin-left: -5px;
-        }
-
-        #covidwarning>div>div:first-child>p {
-            width: 300px;
-            margin-left: -15px;
-            color: #7a5505;
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-        }
-
-        #covidwarning>div:nth-child(2) {
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-            margin-left: 70px;
-            margin-top: 7px;
-            color: #7a5505;
-
-        }
-
-        #covidwarning>div:nth-child(2)>p {
-            text-decoration: underline;
-        }
-
-        #removecovid {
-            margin-right: 15px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #7a5505;
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-        }
-
-        #rating {
-            width: 70%;
-            display: flex;
-            margin: auto;
-            margin-top: 15px;
-        }
-
-        .fa-check {
-            color: #2f7000;
-            font-size: 15px;
-            line-height: 21.1765px;
-            margin-right: 10px;
-
-        }
-
-        #rating>p {
-            color: #2f7000;
-            font-size: 15px;
-            line-height: 21.1765px;
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-        }
-
-        #body {
-            display: flex;
-            height: 500px;
-            border: 1px solid red;
-            width: 70%;
-            margin: auto;
-            margin-top: 15px;
-        }
-
-        #body>#leftbody {
-            width: 62%;
-            border: 1px solid black;
-            margin-right: 15px;
-        }
-
-        #body>#rightbody {
-            width: 37%;
-            border: 1px solid blue;
-        }
-
-        #userinfo {
-            display: flex;
-            background-color: white;
-        }
-
-        #personIcon {
-            width: 10%;
-            border: 1px solid red;
-            padding-left: 20px;
-            padding-top: 20px;
-        }
-        #personIcon>i{
-            font-size: 30px;
-            
-        }
-
-        #userInput {
-            width: 90%;
-            border: 1px solid teal;
-        }
-
-        #userInput>form {
-            width: 100%;
-            padding-top: 20px;
-            border: 1px solid blue;
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-        }
-        #userInput>form>label:first-child{
-            font-size: 15px;
-            font-weight: bold;
-        }
-        #userInput>form>p:nth-child(4){
-            font-size: 15px;
-            color: #2f7000;
-            margin-top: 7px;
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-        }
-        #userInput .required:after{
-             content: "*";
-             color: #2f7000;
-        }
-        #userInput .required{
-            color: #616161;
-            font-size: 13px;
-            font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-            font-weight: 700;
-            line-height: 18.2px; 
-        }
-         #firstNameAndLastName{
-            display: flex;
-            border: 1px solid red;
-         }
-         .required{
-            border: 1px solid red;
-            
-         }
-    </style>
+    <link rel="stylesheet" href="payment.css">
 </head>
 
 <body>
@@ -237,9 +27,6 @@
             </svg>
             <div>Hello, Manjunath</div>
         </div>
-
-
-
     </div>
     <div id="header">
         <h1>Review and book</h1>
@@ -262,6 +49,15 @@
             <p>Find out more <i class="fa-solid fa-clone"></i></p>
         </div>
     </div>
+    <div id="freeCancel">
+        <div>
+            <img src="https://a.travel-assets.com/travel-assets-manager/03052020/illustration__free__cancellation__sml.svg" alt="">
+        </div>
+        <div>
+            <p>Free cancellation before <strong>2 days</strong>to checkin.</p>
+            <p>You can change or cancel this stay for a full refund if plans change. Because flexibility matters.</p>
+        </div>
+    </div>
     <div id="rating">
         <i class="fa-solid fa-check"></i>
         <p>You have picked winner! This hotel is rated 4.2/5</p>
@@ -278,9 +74,9 @@
                 <div id="userInput">
                     <form>
                         <label for="">Room 1:</label>
-                        <label for="">2 Adults, 1 King Bed, Non-smoking</label><br/>
+                        <label for="">2 Adults, 1 King Bed, Non-smoking</label><br />
                         <p><i class="fa-solid fa-check"></i>Free parking</p>
-                        <label class="required" for="">Traveller name</label><br/>
+                        <label class="required" for="">Traveller name</label><br />
                         <select name="" id="tName">
                             <option value="">Select Traveller</option>
                             <option value="Add new traveller">Add new traveller</option>
@@ -288,27 +84,160 @@
                         </select>
                         <div id="firstNameAndLastName">
                             <div id="firstName">
-                                <label class="required" for="">First name</label><br/>
-                                <input type="text" placeholder="(e.g.masai)" required>
+                                <label class="required" for="">First name</label><br />
+                                <input id="firstName" type="text" placeholder="(e.g.masai)" required>
                             </div>
                             <div id="lastName">
-                                <label class="required" for="">last name</label><br/>
-                                <input type="text" placeholder="(e.g.school)" required>
+                                <label class="required" for="">last name</label><br />
+                                <input id="lastName" type="text" placeholder="(e.g.school)" required>
                             </div>
                         </div>
-                        <label class="required" for="">Mobile phone number</label><br/>
-                        <label for="">IND  +91  <i class="fa-solid fa-angle-down"></i></label>
-                        <input type="number" placeholder="So the property can reach you" required><br/>
+                        <label class="required" for="">Mobile phone number</label><br />
+                        <label id="countryCode" for="">IND +91 <i class="fa-solid fa-angle-down"></i></label>
+                        <input type="number" id="phoneNumber" placeholder="So the property can reach you" required><br />
                         <input type="checkbox">
-                        <label for="">Recive text alert about this trip(free of charge)</label><br/>
+                        <label class="checkbox-label" for="">Recive text alert about this trip(free of charge)</label><br />
                         <p>Special Requests(Optional)</p>
                     </form>
                 </div>
             </div>
+            <div id="paymentDetails">
+                <div id="paymentIcon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div id="paymentData">
+                     <div class="paymentSafety">
+                        <div> 
+                            <i class="fa-solid fa-check"></i>
+                            <p>We use secure transmission</p>  
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <p>We protect your personal information</p> 
+                        </div>
+                     </div>
+                     <div id="choicePayment">
+                        <div>Debit/Credit Card</div>
+                        <div>Netbanking</div>
+                     </div>
+                     <div id="cardPayment">
+                        <div>
+                            <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_master_card.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_american_express.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_visa.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_visa_electron.svg" alt="">
+                        </div>
+                     </div>
+                     <form >
+                        <label class="requiredPaymentType" for="">Name on Card</label><br/>
+                        <input id="cardName" class="cardData" type="text" required><br/>
+                        <label class="requiredPaymentType" for="">Debit/Credit card number</label><br/>
+                        <input id="cardNum" class="cardData" type="number" required><br/>
+                        <label class="requiredPaymentType" for="">Expiry date</label><br/>
+                        <select id="expMonth" class="expDate" >
+                            <option value="">Month</option>
+                            <option value="01 Jan">01 Jan</option>
+                        </select>
+                        <select id="expYear" class="expDate">
+                            <option value="">Year</option>
+                            <option value="2035">2035</option>
+                        </select><br/>
+                        <label class="requiredPaymentType" for="">Security code</label><br/>
+                        <input id="cvv" class="cardData" type="number"><br/>
+                        <label class="requiredPaymentType" for="">Billing country/territory</label><br/>
+                        <select class="billingCountry" >
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Norway">Norway</option>
+                        </select><br/>
+                        <label class="requiredPaymentType" for="">PAN</label><br/>
+                        <input required id="panNum" class="cardData" ><br/>
+                        <input type="checkbox">
+                        <label for="">Remember this card for future use</label>
+                     </form>
+                </div>
+            </div>
+            <div id="bookingInfo" >
+                <h2>Important information about your booking</h2>
+                <div class="scroll">
+                  <ul>
+                    <li>Cancellations or changes made after 11:59 (property local time) on 26 Jun 2022 or no-shows are subject to a property fee equal to 100% of the total amount paid for the reservation</li>
+                    <li>Front desk staff will greet guests on arrival.</li>
+                    <li>Please note that BEX Travel Asia Pte Ltd and the hotel will not issue a tax invoice. You will receive a commercial receipt for the purpose of the transaction.</li>
+                    <li>
+                        <p>You'll be asked to pay the following charges at the property:</p>
+                        <ul id="padUl">
+                            <li>New Year's Eve (31 December) Gala Dinner per adult: INR 30000</li>
+                            <li>New Year's Eve (31 December) Gala Dinner per child: INR 30000 (from 7 to 12 years old)</li>
+                        </ul>
+                    </li>
+                    <p>We have included all charges provided to us by the property</p>
+                    
+
+                  </ul>
+                </div>
+                <div id="moreLinks">By clicking on the button below, I acknowledge that I have reviewed the
+                 <a href="">Privacy Statement
+                    <i class="fa-solid fa-clone"></i>
+                 </a>
+                 and
+                 <a href="">Government Travel Advice
+                    <i class="fa-solid fa-clone"></i>
+                 </a>
+                 and have reviewed and accept the
+                 <a href="">Rules & Restrictions</a>
+                 and
+                 <a href="">Trems Of Use
+                    <i class="fa-solid fa-clone"></i>
+                 </a>
+                </div>
+                <span class="changePlan">
+                    <i class="fa-solid fa-check"></i>
+                    Change of plans? No problem. You can
+                    <strong>cancel for free</strong>
+                    before
+                    <a href="">Sun, 26 Jun</a>
+                </span><br/>
+                <button id="completeBooking">complete booking  <i class="fa-solid fa-angle-right"></i></button>
+                <div id="extraInfo">
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div>
+                        <p>We use secure transmission and encrypted storage to protect your personal information.</p>
+                        <p>This payment will be processed in India. This does not apply when the travel provider (airline/hotel/rail, etc.) processes your payment.</p>
+                    </div>
+                    
+                </div>
+            </div>
+           
         </div>
         <div id="rightbody">
-
+          
         </div>
+    </div>
+    <div id="footer">
+       <p id="feedback"> <strong>[+]</strong>  Tell us what you think <i class="fa-solid fa-clone"></i></p>
+        <div class="policy">
+            <span>Privacy Policy <i class="fa-solid fa-clone"></i> </span>
+            <span>Terms of Use <i class="fa-solid fa-clone"></i></span><br/>
+            <p><i class="fa-regular fa-copyright"></i>2022Expedia, Inc, an Expedia Group Company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte Ltd. All rights reserved.</p>
+        </div>
+        <div id="footerImg">
+            <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt="">
+            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+        </div>
+        
+       
     </div>
 </body>
 
