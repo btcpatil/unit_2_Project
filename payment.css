@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid red;
 }
 
 #navbar>#username>svg {
@@ -128,9 +129,10 @@ body {
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 #freeCancel>div:last-child>p:last-child {
     color: rgb(97, 97, 97);
-    font-size:13px ;
+    font-size: 13px;
     font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
 }
@@ -159,22 +161,18 @@ body {
 
 #body {
     display: flex;
-
-    border: 1px solid red;
     width: 70%;
     margin: auto;
     margin-top: 15px;
 }
 
 #body>#leftbody {
-    width: 62%;
-    border: 1px solid black;
+    width: 65%;
     margin-right: 15px;
 }
 
 #body>#rightbody {
-    width: 37%;
-    border: 1px solid blue;
+    width: 34%;
 }
 
 #userinfo {
@@ -512,7 +510,8 @@ body {
     margin-bottom: 15px;
     font-size: 13px;
 }
-#footer #feedback{
+
+#footer #feedback {
     margin: auto;
     margin-top: 50px;
     text-align: center;
@@ -521,7 +520,8 @@ body {
     font-weight: 700;
     text-decoration: underline;
 }
-#footer .policy{
+
+#footer .policy {
     width: 32%;
     line-height: 24px;
     margin: auto;
@@ -531,15 +531,143 @@ body {
     font-weight: 400;
     font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
 }
-#footer .policy>span:first-child{
+
+#footer .policy>span:first-child {
     margin-right: 30px;
 }
-#footerImg{
-   display: flex;
-   flex-direction: column;
-  align-items: center;
-   margin-top: 15px;
+
+#footerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
 }
-#footerImg>img{
+
+#footerImg>img {
     margin-bottom: 15px;
 }
+
+#hotelDetails {
+    background-color: white;
+}
+
+#hotelDetails #hotelImage {
+    border: 1px solid red;
+    position: relative;
+    height: 200px;
+}
+
+#hotelDetails #hotelImage>img {
+    width: 100%;
+    height: 200px;
+    filter: brightness(50%);
+}
+
+#hotelDetails #hotelImage>h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20.25px;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+#hotelDetails .bookingSummary {
+    color: rgb(97, 97, 97);
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    line-height: 21.1765px;
+    padding: 13px;
+    margin-top: 5px;
+}
+
+#hotelDetails .bookingSummary>span:first-child {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#hotelDetails .bookingSummary>span:first-child strong {
+    color: black;
+}
+
+#hotelDetails .bookingSummary .roomSummary {
+    margin-top: 15px;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+#priceDetails {
+    background-color: white;
+    margin-top: 10px;
+}
+
+#priceDetails>h1:first-child {
+    padding: 15px 0px 15px 15px;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+#priceDetails>hr {
+    width: 100%;
+}
+
+#priceSummary {
+    padding: 13px;
+}
+
+#priceSummary .roomPrice {
+    display: flex;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#priceSummary .taxes {
+    display: flex;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#priceSummary #finalTotal{
+    display: flex;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-size: 17px;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+#priceSummary>div:nth-child(6){
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+#priceSummary .mandatoryCharge{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(97, 97, 97);
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+#priceSummary .promoCode {
+   margin-top: 25px;
+}
+#priceSummary .promo {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+ }
+ #priceSummary .hotelRateInformation{
+    margin-top: 15px;
+    font-size: 11.47px;
+    line-height: 16px;
+    color: rgb(97, 97, 97);
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+ }
+ 
